@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>anxtita | Modern Minimalist Luxury Fashion</title>
+  <meta name="description" content="Discover anxtita, a premium fashion e-commerce destination offering carefully curated collections for men, women, and kids. Modern aesthetics, natural fabrics.">
+  
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+
+  <!-- PROMOTION BAR -->
+  <div style="background-color: #111; color: #fff; text-align: center; padding: 0.5rem; font-size: 0.75rem; letter-spacing: 0.2em; text-transform: uppercase;">
+    Free shipping on orders over $150 â€¢ Code: WELCOME10 for 10% off
+  </div>
+
+  <!-- NAVIGATION HEADER -->
+  <header class="main-header">
+    <div class="container header-container">
+      
+      <!-- Logo -->
+      <a href="#" class="logo" id="nav-logo">
+        anxtita<span>STORE</span>
+      </a>
+      
+      <!-- Main Nav Links -->
+      <nav class="nav-links" id="main-nav">
+        <a href="#" class="nav-link active" data-target="home-view">Home</a>
+        <a href="#" class="nav-link" data-target="shop-view" data-cat="all">Shop</a>
+        <a href="#" class="nav-link" data-target="shop-view" data-cat="women">Women</a>
+        <a href="#" class="nav-link" data-target="shop-view" data-cat="men">Men</a>
+        <a href="#" class="nav-link" data-target="shop-view" data-cat="kids">Kids</a>
+      </nav>
+      
+      <!-- Actions (Search, Wishlist, Cart, Account) -->
+      <div class="header-actions">
+        
+        <!-- Account Button -->
+        <button class="header-icon-btn" id="header-account-btn" title="My Account">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+            <circle cx="12" cy="7" r="4"></circle>
+          </svg>
+        </button>
+        
+        <!-- Wishlist Button -->
+        <button class="header-icon-btn" id="header-wishlist-btn" title="Wishlist">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+          </svg>
+          <span class="icon-badge" id="wishlist-badge">0</span>
+        </button>
+        
+        <!-- Cart Button -->
+        <button class="header-icon-btn" id="header-cart-btn" title="Shopping Bag">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+          </svg>
+          <span class="icon-badge" id="cart-badge">0</span>
+        </button>
+        
+        <!-- Mobile Menu Toggle -->
+        <button class="header-icon-btn mobile-nav-toggle" id="mobile-menu-toggle">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+        
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN VIEWPORT -->
+  <main>
+
+    <!-- ==========================================
+         A. HOME VIEW
+         ========================================== -->
+    <section id="home-view" class="view-section active">
+      
+      <!-- Hero Banner -->
+      <div class="hero">
+        <div class="container">
+          <div class="hero-content">
+            <span class="text-uppercase" style="font-size: 0.8rem; letter-spacing: 0.2em; color: var(--accent-color); font-weight: 600; display: block; margin-bottom: 0.5rem;">New Season Release</span>
+            <h1>The Art of Pure Minimalism</h1>
+            <p>Elevate your everyday wardrobe with our summer essentials. Sourced from organic, premium cotton, Italian virgin wool, and Belgian flax linen.</p>
+            <a href="#" class="btn btn-primary navigate-shop-btn" data-cat="all">Explore Collection</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Category Grid Section -->
+      <div class="container home-section">
+        <div class="section-header text-center">
+          <span class="text-uppercase text-muted" style="font-size: 0.75rem; font-weight: 500;">Collections</span>
+          <h2 class="h2">Shop by Category</h2>
+        </div>
+        
+        <div class="category-grid">
+          <!-- Women Card -->
+          <div class="category-card navigate-shop-btn" data-cat="women" style="cursor: pointer;">
+            <img class="category-img" src="assets/women-category.jpg" alt="Women's Collection">
+            <div class="category-overlay">
+              <h3 class="category-title">Women</h3>
+              <span class="category-cta">Discover More</span>
+            </div>
+          </div>
+          <!-- Men Card -->
+          <div class="category-card navigate-shop-btn" data-cat="men" style="cursor: pointer;">
+            <img class="category-img" src="assets/men-category.jpg" alt="Men's Collection">
+            <div class="category-overlay">
+              <h3 class="category-title">Men</h3>
+              <span class="category-cta">Discover More</span>
+            </div>
+          </div>
+          <!-- Kids Card -->
+          <div class="category-card navigate-shop-btn" data-cat="kids" style="cursor: pointer;">
+            <img class="category-img" src="assets/kids-category.jpg" alt="Kids' Collection">
+            <div class="category-overlay">
+              <h3 class="category-title">Kids</h3>
+              <span class="category-cta">Discover More</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Feature Highlight Sections (Home Page Carousel / Showcase) -->
+      <div class="container home-section" style="border-top: 1px solid var(--border-color);">
+        <div class="section-header text-center">
+          <span class="text-uppercase text-muted" style="font-size: 0.75rem; font-weight: 500;">Highly Desired</span>
+          <h2 class="h2">Seasonal Highlights</h2>
+          
+          <div class="modal-tabs-header" style="justify-content: center; margin-top: 2rem; border-bottom: none;">
+            <button class="modal-tab-btn active home-tag-btn" data-tag="New Arrivals">New Arrivals</button>
+            <button class="modal-tab-btn home-tag-btn" data-tag="Best Sellers">Best Sellers</button>
+            <button class="modal-tab-btn home-tag-btn" data-tag="Seasonal Collections">Seasonal Collections</button>
+            <button class="modal-tab-btn home-tag-btn" data-tag="Sale">Sale</button>
+          </div>
+        </div>
+        
+        <!-- Showcase Grid -->
+        <div class="product-grid" id="home-showcase-grid">
+          <!-- Dynamically populated via app.js -->
+        </div>
+        
+        <div style="text-align: center; margin-top: 4rem;">
+          <a href="#" class="btn btn-secondary navigate-shop-btn" data-cat="all">View All Products</a>
+        </div>
+      </div>
+
+      <!-- Newsletter Section -->
+      <div style="background-color: var(--white); border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color); padding: 6rem 0;">
+        <div class="container" style="max-width: 600px; text-align: center;">
+          <h2 class="h2" style="margin-bottom: 1rem;">Join the anxtita Circle</h2>
+          <p class="text-muted" style="font-size: 0.95rem; margin-bottom: 2.5rem;">Subscribe to receive early access to new collections, exclusive private sales, and styling editorials.</p>
+          <form class="newsletter-form" id="home-newsletter-form" style="max-width: 450px; margin: 0 auto;">
+            <input class="newsletter-input" type="email" placeholder="Your email address" required style="border: none;">
+            <button class="newsletter-btn" type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      
+    </section>
+
+
+    <!-- ==========================================
+         B. SHOP / CATALOG VIEW
+         ========================================== -->
+    <section id="shop-view" class="view-section">
+      <div class="container">
+        
+        <div class="catalog-layout">
+          
+          <!-- Filter Sidebar -->
+          <aside class="filters-sidebar">
+            <h2 class="h3" style="font-family: var(--font-sans); font-size: 1.25rem; font-weight: 500; margin-bottom: 2.5rem; text-transform: uppercase; letter-spacing: 0.05em;">Filters</h2>
+            
+            <!-- Category Filter -->
+            <div class="filter-widget">
+              <span class="filter-title">Category</span>
+              <div class="filter-list">
+                <label class="filter-checkbox-label">
+                  <input type="checkbox" name="category" value="women" id="cat-women">
+                  Women
+                </label>
+                <label class="filter-checkbox-label">
+                  <input type="checkbox" name="category" value="men" id="cat-men">
+                  Men
+                </label>
+                <label class="filter-checkbox-label">
+                  <input type="checkbox" name="category" value="kids" id="cat-kids">
+                  Kids
+                </label>
+              </div>
+            </div>
+            
+            <!-- Size Filter -->
+            <div class="filter-widget">
+              <span class="filter-title">Size</span>
+              <div class="size-filter-grid" id="size-filter-options">
+                <div class="size-tile" data-size="XS">XS</div>
+                <div class="size-tile" data-size="S">S</div>
+                <div class="size-tile" data-size="M">M</div>
+                <div class="size-tile" data-size="L">L</div>
+                <div class="size-tile" data-size="XL">XL</div>
+                <div class="size-tile" data-size="XXL">XXL</div>
+                <div class="size-tile" data-size="0-3M">0-3M</div>
+                <div class="size-tile" data-size="3-6M">3-6M</div>
+                <div class="size-tile" data-size="6-12M">6-12M</div>
+                <div class="size-tile" data-size="12-18M">12-18M</div>
+                <div class="size-tile" data-size="2T">2T</div>
+                <div class="size-tile" data-size="3T">3T</div>
+                <div class="size-tile" data-size="4T">4T</div>
+                <div class="size-tile" data-size="5T">5T</div>
+                <div class="size-tile" data-size="6Y">6Y</div>
+                <div class="size-tile" data-size="8Y">8Y</div>
+                <div class="size-tile" data-size="10Y">10Y</div>
+                <div class="size-tile" data-size="30">30</div>
+                <div class="size-tile" data-size="32">32</div>
+                <div class="size-tile" data-size="34">34</div>
+                <div class="size-tile" data-size="36">36</div>
+              </div>
+            </div>
+            
+            <!-- Color Filter -->
+            <div class="filter-widget">
+              <span class="filter-title">Color</span>
+              <div class="color-filter-grid" id="color-filter-options">
+                <!-- Swatches loaded dynamically based on color selection -->
+              </div>
+            </div>
+            
+            <!-- Price Range Filter -->
+            <div class="filter-widget">
+              <span class="filter-title">Price Range</span>
+              <div class="price-range-inputs">
+                <input type="number" id="price-min" placeholder="Min" min="0" value="0">
+                <span class="text-muted">â€”</span>
+                <input type="number" id="price-max" placeholder="Max" min="0" value="500">
+              </div>
+              <button class="btn btn-outline btn-small btn-full" id="apply-price-filter-btn" style="margin-top: 1rem;">Filter Price</button>
+            </div>
+            
+            <!-- Reset Button -->
+            <button class="btn btn-secondary btn-small btn-full" id="reset-filters-btn">Clear All Filters</button>
+            
+          </aside>
+          
+          <!-- Catalog Grid and Controls -->
+          <div>
+            
+            <!-- Sorting & Search Bar -->
+            <div class="catalog-controls">
+              
+              <!-- Search -->
+              <div class="search-bar-container">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="11" cy="11" r="8"></circle>
+                  <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+                <input type="text" id="catalog-search" placeholder="Search product catalogs...">
+              </div>
+              
+              <!-- Sorting -->
+              <div class="sort-container">
+                <label for="catalog-sort" class="text-muted" style="font-size: 0.85rem; font-weight: 500; text-transform: uppercase;">Sort By:</label>
+                <select id="catalog-sort">
+                  <option value="featured">Featured</option>
+                  <option value="price-low">Price: Low to High</option>
+                  <option value="price-high">Price: High to Low</option>
+                  <option value="rating">Top Rated</option>
+                </select>
+              </div>
+              
+            </div>
+            
+            <!-- Active Filter Labels -->
+            <div id="active-filter-tags" style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 1.5rem;"></div>
+            
+            <!-- Products Showcase Grid -->
+            <div class="product-grid" id="catalog-products-grid">
+              <!-- Dynamically populated via app.js -->
+            </div>
+            
+            <!-- Empty State -->
+            <div id="catalog-empty-state" class="empty-cart-state" style="display: none;">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="8" y1="12" x2="16" y2="12"></line>
+              </svg>
+              <h3 class="h3" style="font-family: var(--font-sans); margin-bottom: 0.5rem;">No products found</h3>
+              <p>Try refining your search terms or clearing current filter selections.</p>
+            </div>
+            
+          </div>
+          
+        </div>
+        
+      </div>
+    </section>
+
+
+    <!-- ==========================================
+         C. WISHLIST VIEW
+         ========================================== -->
+    <section id="wishlist-view" class="view-section">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <span class="text-uppercase text-muted" style="font-size: 0.75rem; font-weight: 500;">My Favorites</span>
+          <h2 class="h2">Your Wishlist</h2>
+        </div>
+        
+        <!-- Wishlist Grid -->
+        <div class="product-grid" id="wishlist-products-grid">
+          <!-- Dynamically populated via app.js -->
+        </div>
+        
+        <!-- Wishlist Empty State -->
+        <div id="wishlist-empty-state" class="empty-cart-state" style="display: none;">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+          </svg>
+          <h3 class="h3" style="font-family: var(--font-sans); margin-bottom: 0.5rem;">Your wishlist is currently empty</h3>
+          <p>Explore our catalog to save items you love for later.</p>
+          <a href="#" class="btn btn-primary navigate-shop-btn" data-cat="all" style="margin-top: 1.5rem;">Shop the Collections</a>
+        </div>
+        
+      </div>
+    </section>
+
+
+    <!-- ==========================================
+         D. CUSTOMER ACCOUNT / ORDER HISTORY
+         ========================================== -->
+    <section id="account-view" class="view-section">
+      <div class="container">
+        
+        <div class="profile-layout" id="profile-logged-in-container" style="display: none;">
+          
+          <!-- Sidebar Nav -->
+          <aside class="profile-sidebar">
+            <div style="margin-bottom: 2.5rem; padding-left: 1rem;">
+              <h3 class="h3" id="profile-sidebar-username" style="font-family: var(--font-sans); font-size: 1.25rem; font-weight: 600;">Welcome</h3>
+              <p class="text-muted" id="profile-sidebar-email" style="font-size: 0.85rem;"></p>
+            </div>
+            
+            <nav>
+              <div class="profile-nav-item active" data-profile-tab="order-history">
+                Order History
+              </div>
+              <div class="profile-nav-item" data-profile-tab="shipping-details">
+                Shipping Address
+              </div>
+              <div class="profile-nav-item" id="account-logout-btn">
+                Log Out
+              </div>
+            </nav>
+          </aside>
+          
+          <!-- Content Sections -->
+          <div>
+            
+            <!-- Order History Tab -->
+            <div class="profile-content-section active" id="profile-tab-order-history">
+              <h2 class="h3" style="font-family: var(--font-sans); font-size: 1.5rem; margin-bottom: 2rem;">Order History</h2>
+              
+              <div class="order-history-table-container">
+                <table class="order-table">
+                  <thead>
+                    <tr>
+                      <th>Order ID</th>
+                      <th>Date Placed</th>
+                      <th>Products</th>
+                      <th>Total Value</th>
+                      <th>Delivery Status</th>
+                    </tr>
+                  </thead>
+                  <tbody id="order-history-table-body">
+                    <!-- Dynamically populated via app.js -->
+                  </tbody>
+                </table>
+              </div>
+              
+              <div id="orders-empty-state" class="empty-cart-state" style="display: none; padding: 2rem 0;">
+                <p>You have not placed any orders yet.</p>
+              </div>
+            </div>
+            
+            <!-- Shipping Details Tab -->
+            <div class="profile-content-section" id="profile-tab-shipping-details">
+              <h2 class="h3" style="font-family: var(--font-sans); font-size: 1.5rem; margin-bottom: 2rem;">Default Shipping Details</h2>
+              
+              <form id="profile-shipping-form">
+                <div class="form-group">
+                  <label class="form-label" for="ship-street">Street Address</label>
+                  <input class="form-input" type="text" id="ship-street" required>
+                </div>
+                
+                <div class="form-row">
+                  <div class="form-group">
+                    <label class="form-label" for="ship-city">City</label>
+                    <input class="form-input" type="text" id="ship-city" required>
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label" for="ship-state">State / Province</label>
+                    <input class="form-input" type="text" id="ship-state" required>
+                  </div>
+                </div>
+                
+                <div class="form-row">
+                  <div class="form-group">
+                    <label class="form-label" for="ship-zip">Zip / Postal Code</label>
+                    <input class="form-input" type="text" id="ship-zip" required>
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label" for="ship-country">Country</label>
+                    <input class="form-input" type="text" id="ship-country" required>
+                  </div>
+                </div>
+                
+                <button class="btn btn-primary" type="submit">Update Shipping Address</button>
+              </form>
+            </div>
+            
+          </div>
+          
+        </div>
+        
+        <!-- Auth Cards (Shown when logged out) -->
+        <div id="profile-logged-out-container">
+          
+          <!-- Login Panel -->
+          <div class="auth-panel" id="auth-login-panel">
+            <div class="auth-header">
+              <h2>Sign In</h2>
+              <p class="text-muted">Access your anxtita account credentials</p>
+            </div>
+            
+            <form id="login-form">
+              <div class="form-group">
+                <label class="form-label" for="login-email">Email Address</label>
+                <input class="form-input" type="email" id="login-email" required placeholder="admin@anxtita.com">
+              </div>
+              
+              <div class="form-group">
+                <label class="form-label" for="login-password">Password</label>
+                <input class="form-input" type="password" id="login-password" required placeholder="â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢">
+              </div>
+              
+              <button class="btn btn-primary btn-full" type="submit" style="margin-top: 1rem;">Sign In</button>
+            </form>
+            
+            <div class="auth-footer">
+              <p>Don't have an account? <span class="auth-switch-btn" id="switch-signup-btn">Create one</span></p>
+              <p style="margin-top: 0.5rem; font-size: 0.8rem; color: var(--accent-dark);">Quick Test Account: admin@anxtita.com / password</p>
+            </div>
+          </div>
+          
+          <!-- Register Panel -->
+          <div class="auth-panel" id="auth-register-panel" style="display: none;">
+            <div class="auth-header">
+              <h2>Create Account</h2>
+              <p class="text-muted">Register for custom updates and faster checkout</p>
+            </div>
+            
+            <form id="register-form">
+              <div class="form-group">
+                <label class="form-label" for="reg-name">Full Name</label>
+                <input class="form-input" type="text" id="reg-name" required placeholder="Jane Doe">
+              </div>
+              
+              <div class="form-group">
+                <label class="form-label" for="reg-email">Email Address</label>
+                <input class="form-input" type="email" id="reg-email" required placeholder="jane@example.com">
+              </div>
+              
+              <div class="form-group">
+                <label class="form-label" for="reg-password">Password</label>
+                <input class="form-input" type="password" id="reg-password" required placeholder="â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢">
+              </div>
+              
+              <button class="btn btn-primary btn-full" type="submit" style="margin-top: 1rem;">Register Account</button>
+            </form>
+            
+            <div class="auth-footer">
+              <p>Already have an account? <span class="auth-switch-btn" id="switch-login-btn">Sign in</span></p>
+            </div>
+          </div>
+          
+        </div>
+        
+      </div>
+    </section>
+
+
+    <!-- ==========================================
+         E. SECURE CHECKOUT VIEW
+         ========================================== -->
+    <section id="checkout-view" class="view-section">
+      <div class="container">
+        
+        <div class="checkout-grid" id="checkout-form-container">
+          
+          <!-- Checkout Steps / Form -->
+          <div class="checkout-card">
+            <h2 class="checkout-title">Shipping & Payment</h2>
+            
+            <form id="checkout-main-form">
+              
+              <h3 style="font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.1em; font-weight: 600; margin-bottom: 1.5rem; border-bottom: 1px solid var(--border-color); padding-bottom: 0.5rem;">1. Delivery Information</h3>
+              
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="chk-first-name">First Name</label>
+                  <input class="form-input" type="text" id="chk-first-name" required>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="chk-last-name">Last Name</label>
+                  <input class="form-input" type="text" id="chk-last-name" required>
+                </div>
+              </div>
+              
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="chk-email">Email Address</label>
+                  <input class="form-input" type="email" id="chk-email" required>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="chk-phone">Phone Number</label>
+                  <input class="form-input" type="tel" id="chk-phone" required>
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <label class="form-label" for="chk-street">Street Address</label>
+                <input class="form-input" type="text" id="chk-street" required>
+              </div>
+              
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="chk-city">City</label>
+                  <input class="form-input" type="text" id="chk-city" required>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="chk-state">State / Province</label>
+                  <input class="form-input" type="text" id="chk-state" required>
+                </div>
+              </div>
+              
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="chk-zip">Zip / Postal Code</label>
+                  <input class="form-input" type="text" id="chk-zip" required>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="chk-country">Country</label>
+                  <input class="form-input" type="text" id="chk-country" required>
+                </div>
+              </div>
+              
+              <h3 style="font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.1em; font-weight: 600; margin-top: 2.5rem; margin-bottom: 1.5rem; border-bottom: 1px solid var(--border-color); padding-bottom: 0.5rem;">2. Secured Payment</h3>
+              
+              <div class="form-group">
+                <label class="form-label" for="card-name">Cardholder Name</label>
+                <input class="form-input" type="text" id="card-name" required placeholder="Alex Mercer">
+              </div>
+              
+              <div class="form-group">
+                <label class="form-label" for="card-number">Credit Card Number</label>
+                <input class="form-input" type="text" id="card-number" required placeholder="4111 2222 3333 4444" pattern="^[0-9\s]{12,19}$" maxlength="19">
+              </div>
+              
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="card-expiry">Expiration Date</label>
+                  <input class="form-input" type="text" id="card-expiry" required placeholder="MM/YY" pattern="^(0[1-9]|1[0-2])\/[0-9]{2}$" maxlength="5">
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="card-cvc">CVC Code</label>
+                  <input class="form-input" type="text" id="card-cvc" required placeholder="123" pattern="^[0-9]{3,4}$" maxlength="4">
+                </div>
+              </div>
+              
+              <button class="btn btn-primary btn-full" type="submit" style="margin-top: 2rem;">Submit & Pay Order</button>
+            </form>
+          </div>
+          
+          <!-- Order Summary Section -->
+          <aside class="order-summary-card">
+            <h3 class="order-summary-title">Summary Review</h3>
+            
+            <!-- Items listing -->
+            <div class="checkout-summary-list" id="checkout-summary-items">
+              <!-- Dynamically populated via app.js -->
+            </div>
+            
+            <!-- Pricing breakdown -->
+            <div style="margin-top: 2rem; margin-bottom: 2rem;">
+              <div class="summary-row">
+                <span>Subtotal</span>
+                <span id="checkout-subtotal">$0.00</span>
+              </div>
+              
+              <div class="summary-row" id="checkout-discount-row" style="display: none; color: var(--error-color);">
+                <span>Discount</span>
+                <span id="checkout-discount">-$0.00</span>
+              </div>
+              
+              <div class="summary-row">
+                <span>Estimated Shipping</span>
+                <span id="checkout-shipping">$0.00</span>
+              </div>
+              
+              <div class="summary-row total">
+                <span>Grand Total</span>
+                <span id="checkout-grand-total">$0.00</span>
+              </div>
+            </div>
+            
+            <!-- Promocode input inside checkout -->
+            <div class="promo-input-group">
+              <input type="text" id="checkout-promo-input" placeholder="Promocode">
+              <button id="checkout-promo-apply-btn">Apply</button>
+            </div>
+            
+            <div id="checkout-promo-badge-container"></div>
+            
+            <p style="font-size: 0.8rem; color: var(--text-muted); line-height: 1.5; margin-top: 2rem;">
+              ðŸ”’ Secured checkout using bank-grade AES 256-bit encryption. Your payment credentials are never logged or stored.
+            </p>
+          </aside>
+          
+        </div>
+        
+        <!-- Order Completion Confirmation -->
+        <div id="checkout-success-container" style="display: none;">
+          <div class="order-success-screen">
+            <div class="success-icon-wrapper">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+            </div>
+            <h2>Purchase Confirmed</h2>
+            <p>Thank you for shopping at anxtita. We've sent a detailed confirmation invoice to your email address, and our warehouse has started preparing your order.</p>
+            <div class="order-id-badge" id="success-order-id">ORD-00000</div>
+            <div>
+              <a href="#" class="btn btn-primary navigate-shop-btn" data-cat="all">Continue Shopping</a>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==========================================
+       F. SLIDING CART DRAWER OVERLAY
+       ========================================== -->
+  <div class="drawer-backdrop" id="cart-drawer-backdrop">
+    <div class="cart-drawer">
+      
+      <div class="drawer-header">
+        <h2 class="drawer-title">Your Bag (<span id="cart-drawer-count">0</span>)</h2>
+        <button class="drawer-close-btn" id="cart-drawer-close" aria-label="Close cart">&times;</button>
+      </div>
+      
+      <div class="drawer-content">
+        
+        <!-- Cart Items List -->
+        <div class="cart-items-list" id="cart-drawer-items">
+          <!-- Dynamically populated via cart.js / app.js -->
+        </div>
+        
+        <!-- Cart Empty State -->
+        <div id="cart-drawer-empty" class="empty-cart-state" style="display: none;">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+          </svg>
+          <p>Your luxury shopping bag is currently empty.</p>
+          <button class="btn btn-secondary btn-small navigate-shop-btn" data-cat="all">Shop Now</button>
+        </div>
+        
+      </div>
+      
+      <div class="drawer-footer" id="cart-drawer-footer">
+        
+        <!-- Promo Entry Box -->
+        <div class="promo-input-group">
+          <input type="text" id="cart-promo-input" placeholder="Coupon Code">
+          <button id="cart-promo-apply-btn">Apply</button>
+        </div>
+        
+        <div id="cart-promo-badge-container"></div>
+        
+        <!-- Subtotals & checkout -->
+        <div class="summary-row">
+          <span>Subtotal</span>
+          <span id="cart-drawer-subtotal">$0.00</span>
+        </div>
+        
+        <div class="summary-row" id="cart-drawer-discount-row" style="display: none; color: var(--error-color);">
+          <span>Discount</span>
+          <span id="cart-drawer-discount">-$0.00</span>
+        </div>
+        
+        <div class="summary-row">
+          <span>Shipping</span>
+          <span id="cart-drawer-shipping">$0.00</span>
+        </div>
+        
+        <div class="summary-row total">
+          <span>Grand Total</span>
+          <span id="cart-drawer-total">$0.00</span>
+        </div>
+        
+        <button class="btn btn-primary btn-full" id="cart-drawer-checkout-btn">Proceed to Checkout</button>
+      </div>
+      
+    </div>
+  </div>
+
+
+  <!-- ==========================================
+       G. PRODUCT QUICK VIEW MODAL
+       ========================================== -->
+  <div class="modal-backdrop" id="product-quick-view-backdrop">
+    <div class="product-modal">
+      
+      <button class="modal-close-btn" id="product-modal-close" aria-label="Close modal">&times;</button>
+      
+      <!-- Left side gallery -->
+      <div class="modal-gallery">
+        <img id="modal-product-main-img" src="" alt="Product Image">
+        <div class="gallery-dots" id="modal-gallery-dots">
+          <!-- Dot togglers loaded dynamically based on product images array -->
+        </div>
+      </div>
+      
+      <!-- Right side details -->
+      <div class="modal-details">
+        <span class="modal-product-tag" id="modal-product-badge">New</span>
+        <h2 class="modal-product-title" id="modal-product-title">Premium Product Title</h2>
+        
+        <div class="modal-rating-row">
+          <span class="stars" id="modal-rating-stars">â˜…â˜…â˜…â˜…â˜…</span>
+          <span class="text-muted" id="modal-rating-text">4.8 (20 reviews)</span>
+        </div>
+        
+        <div class="modal-price-row">
+          <span class="sale-price" id="modal-product-price-current">$0.00</span>
+          <span class="old-price" id="modal-product-price-old" style="display: none;">$0.00</span>
+        </div>
+        
+        <p class="modal-description" id="modal-product-desc">Minimalist description of structural features.</p>
+        
+        <!-- Selection parameters -->
+        <div class="selection-group">
+          <div class="selection-title">Size: <span id="modal-selected-size-label">Select Size</span></div>
+          <div class="size-select-list" id="modal-size-selector-list">
+            <!-- Buttons dynamically populated -->
+          </div>
+        </div>
+        
+        <div class="selection-group">
+          <div class="selection-title">Color: <span id="modal-selected-color-label">Select Color</span></div>
+          <div class="color-select-list" id="modal-color-selector-list">
+            <!-- Swatches dynamically populated -->
+          </div>
+        </div>
+        
+        <!-- Actions -->
+        <div class="modal-actions-row">
+          <div class="modal-qty-selector">
+            <button class="modal-qty-btn" id="modal-qty-dec">-</button>
+            <span class="modal-qty-val" id="modal-qty-display">1</span>
+            <button class="modal-qty-btn" id="modal-qty-inc">+</button>
+          </div>
+          <button class="btn btn-primary modal-add-cart-btn" id="modal-add-to-cart-btn">Add to Bag</button>
+          <button class="modal-wishlist-toggle-btn" id="modal-wishlist-toggle" aria-label="Toggle wishlist">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 20px; height: 20px;">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+            </svg>
+          </button>
+        </div>
+        
+        <!-- Details & Reviews tabs -->
+        <div class="modal-tabs-header">
+          <button class="modal-tab-btn active" data-tab-name="info-tab">Specifications</button>
+          <button class="modal-tab-btn" data-tab-name="reviews-tab">Reviews (<span id="modal-reviews-count-tab">0</span>)</button>
+        </div>
+        
+        <!-- Tab Content: Product details -->
+        <div class="modal-tab-content active" id="modal-tab-info-tab">
+          <ul class="footer-links" style="padding-left: 1rem; list-style-type: disc; color: var(--text-muted); font-size: 0.9rem; margin-bottom: 2rem;">
+            <li>Sourced from sustainable and certified growers</li>
+            <li>Made in an ethical solar-powered facility</li>
+            <li>Hand wash recommended to preserve premium fibres</li>
+            <li>Relaxed, comfortable fit suited for day-to-night layering</li>
+          </ul>
+        </div>
+        
+        <!-- Tab Content: Reviews list -->
+        <div class="modal-tab-content" id="modal-tab-reviews-tab">
+          <div class="reviews-tab-container">
+            
+            <!-- List of existing reviews -->
+            <div id="modal-reviews-list">
+              <!-- Dynamically populated via app.js -->
+            </div>
+            
+            <!-- Write a review -->
+            <h4 class="write-review-heading">Write Customer Review</h4>
+            <form id="modal-write-review-form">
+              <div class="form-group" style="margin-bottom: 1rem;">
+                <label class="form-label">Select Rating</label>
+                <div class="star-rating-select" id="review-stars-select-container">
+                  <span class="star-select-item" data-val="1">â˜…</span>
+                  <span class="star-select-item" data-val="2">â˜…</span>
+                  <span class="star-select-item" data-val="3">â˜…</span>
+                  <span class="star-select-item" data-val="4">â˜…</span>
+                  <span class="star-select-item" data-val="5">â˜…</span>
+                </div>
+              </div>
+              
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="review-author">Your Name</label>
+                  <input class="form-input" type="text" id="review-author" required placeholder="Jane D.">
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="review-title">Review Title</label>
+                  <input class="form-input" type="text" id="review-title" required placeholder="Incredible quality!">
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <label class="form-label" for="review-body">Your Review Description</label>
+                <textarea class="form-input" id="review-body" rows="4" required placeholder="Share your experience wearing this clothing item..."></textarea>
+              </div>
+              
+              <button class="btn btn-secondary btn-small" type="submit">Submit Review</button>
+            </form>
+            
+          </div>
+        </div>
+        
+      </div>
+      
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICATION CONTAINER -->
+  <div class="toast-container" id="global-toast-container"></div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-grid">
+      
+      <div class="footer-brand">
+        <h2>anxtita</h2>
+        <p>anxtita is a luxurious fashion label focusing on sustainability, pure fibers, and timeless minimalist tailoring. Our seasonal capsule collections are produced in small, limited runs to minimize environmental impact.</p>
+      </div>
+      
+      <div>
+        <h4 class="footer-heading">Collections</h4>
+        <ul class="footer-links">
+          <li><a href="#" class="navigate-shop-btn" data-cat="women">Women's Apparel</a></li>
+          <li><a href="#" class="navigate-shop-btn" data-cat="men">Men's Apparel</a></li>
+          <li><a href="#" class="navigate-shop-btn" data-cat="kids">Kids' Apparel</a></li>
+          <li><a href="#" class="navigate-shop-btn" data-cat="all">New Season Arrivals</a></li>
+        </ul>
+      </div>
+      
+      <div>
+        <h4 class="footer-heading">Customer Care</h4>
+        <ul class="footer-links">
+          <li><a href="#">Size Guidelines</a></li>
+          <li><a href="#">Shipping & Returns</a></li>
+          <li><a href="#">Sustainable Fabric Care</a></li>
+          <li><a href="#">Contact Support</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-newsletter">
+        <h4 class="footer-heading">Exclusive Updates</h4>
+        <p>Subscribe to receive news on collection launches, private sales, and styling journals.</p>
+        <form class="newsletter-form" id="footer-newsletter-form">
+          <input class="newsletter-input" type="email" placeholder="Enter your email" required style="border: none;">
+          <button class="newsletter-btn" type="submit">Join</button>
+        </form>
+      </div>
+      
+    </div>
+    
+    <div class="container footer-bottom">
+      <div>
+        &copy; 2026 anxtita Inc. All Rights Reserved. Designed for premium aesthetics.
+      </div>
+      
+      <div class="footer-socials">
+        <a href="#" aria-label="Instagram">Instagram</a>
+        <a href="#" aria-label="Pinterest">Pinterest</a>
+        <a href="#" aria-label="Vimeo">Vimeo</a>
+        <a href="#" aria-label="Journal">Editorial Journal</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- CORE JAVASCRIPT LOGIC -->
+  <script src="js/products.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,21 @@
+{
+  "name": "aura-luxury-store",
+  "version": "1.0.0",
+  "description": "A premium minimalist fashion e-commerce storefront",
+  "main": "index.html",
+  "scripts": {
+    "start": "browser-sync start --server --files \"*.html, css/*.css, js/*.js\"",
+    "dev": "browser-sync start --server --files \"*.html, css/*.css, js/*.js\""
+  },
+  "keywords": [
+    "fashion",
+    "e-commerce",
+    "minimalist",
+    "premium"
+  ],
+  "author": "AURA Store",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^3.0.2"
+  }
+}
